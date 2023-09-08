@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_periode_saisons",
+  "info": {
+    "displayName": "Saison",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "Saison": {
+      "type": "enumeration",
+      "enum": [
+        "Hiver",
+        "Printemps",
+        "Été",
+        "Automne"
+      ]
+    },
+    "Mois": {
+      "type": "enumeration",
+      "enum": [
+        "Tous",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ]
+    }
+  }
+}

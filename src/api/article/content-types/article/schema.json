@@ -12,21 +12,42 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "texte": {
-      "type": "richtext"
+    "Titre": {
+      "type": "string",
+      "required": true
     },
-    "titre": {
+    "SousTitre": {
       "type": "string"
     },
-    "image": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "Contenu": {
+      "type": "richtext",
+      "required": true
+    },
+    "Source": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categorie.categorie",
+      "mappedBy": "articles"
+    },
+    "partenaire": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::partenaire.partenaire",
+      "inversedBy": "articles"
     }
   }
 }

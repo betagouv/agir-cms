@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aides",
+  "info": {
+    "singularName": "aide",
+    "pluralName": "aides",
+    "displayName": "Aide"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "sujets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categorie.categorie",
+      "inversedBy": "aides"
+    }
+  }
+}

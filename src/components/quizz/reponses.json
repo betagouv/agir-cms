@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_quizz_reponses",
+  "info": {
+    "displayName": "Reponses"
+  },
+  "options": {},
+  "attributes": {
+    "reponse": {
+      "type": "string"
+    },
+    "Excat": {
+      "type": "boolean"
+    }
+  }
+}

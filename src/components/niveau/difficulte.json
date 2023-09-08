@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_niveau_difficulte",
+  "info": {
+    "displayName": "Difficulté",
+    "icon": "lightbulb"
+  },
+  "options": {},
+  "attributes": {
+    "Niveau": {
+      "type": "enumeration",
+      "enum": [
+        "simple - 1",
+        "moyen - 2",
+        "avancé - 3",
+        "difficile - 4",
+        "expert - 5"
+      ]
+    }
+  }
+}
