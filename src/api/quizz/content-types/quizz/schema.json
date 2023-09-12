@@ -24,6 +24,18 @@
       "type": "component",
       "repeatable": true,
       "component": "quizz.question"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "quizzes"
+    },
+    "sujets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categorie.categorie",
+      "inversedBy": "quizzes"
     }
   }
 }

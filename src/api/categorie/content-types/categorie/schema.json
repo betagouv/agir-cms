@@ -26,6 +26,12 @@
       "relation": "manyToMany",
       "target": "api::aide.aide",
       "mappedBy": "sujets"
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quizz.quizz",
+      "mappedBy": "sujets"
     }
   }
 }
