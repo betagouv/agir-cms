@@ -1,14 +1,15 @@
 {
   "collectionName": "components_quizz_reponses",
   "info": {
-    "displayName": "Reponses"
+    "displayName": "Reponses",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "reponse": {
       "type": "string"
     },
-    "Excat": {
+    "exact": {
       "type": "boolean"
     }
   }

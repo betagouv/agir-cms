@@ -12,14 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Titre": {
+    "titre": {
       "type": "string",
       "required": true
     },
-    "SousTitre": {
+    "sousTitre": {
       "type": "string"
     },
-    "Image": {
+    "imageUrl": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -30,11 +30,11 @@
         "audios"
       ]
     },
-    "Contenu": {
+    "contenu": {
       "type": "richtext",
       "required": true
     },
-    "Source": {
+    "source": {
       "type": "string"
     },
     "categories": {
@@ -49,7 +49,7 @@
       "target": "api::partenaire.partenaire",
       "inversedBy": "articles"
     },
-    "Niveau": {
+    "niveau": {
       "type": "component",
       "repeatable": false,
       "component": "niveau.difficulte"
@@ -60,12 +60,12 @@
       "target": "api::quizz.quizz",
       "inversedBy": "articles"
     },
-    "Saison": {
+    "saison": {
       "type": "component",
       "repeatable": false,
       "component": "periode.saison"
     },
-    "CodePostal": {
+    "codePostal": {
       "type": "string"
     }
   }

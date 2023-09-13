@@ -4,29 +4,31 @@
   "info": {
     "singularName": "partenaire",
     "pluralName": "partenaires",
-    "displayName": "Partenaire"
+    "displayName": "Partenaire",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Nom": {
+    "nom": {
       "type": "string",
       "required": true
     },
-    "Lien": {
+    "lien": {
       "type": "string"
     },
-    "Logo": {
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "articles": {
       "type": "relation",

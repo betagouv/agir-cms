@@ -1,23 +1,24 @@
 {
   "collectionName": "components_quizz_questions",
   "info": {
-    "displayName": "Question"
+    "displayName": "Question",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Libelle": {
+    "libelle": {
       "type": "string"
     },
-    "Reponse": {
+    "reponses": {
       "displayName": "Reponses",
       "type": "component",
       "repeatable": true,
       "component": "quizz.reponses"
     },
-    "ExplicationOk": {
+    "explicationOk": {
       "type": "richtext"
     },
-    "ExplicationKO": {
+    "explicationKO": {
       "type": "richtext"
     }
   }

@@ -2,11 +2,12 @@
   "collectionName": "components_periode_saisons",
   "info": {
     "displayName": "Saison",
-    "icon": "earth"
+    "icon": "earth",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Saison": {
+    "saison": {
       "type": "enumeration",
       "enum": [
         "Hiver",
@@ -15,7 +16,7 @@
         "Automne"
       ]
     },
-    "Mois": {
+    "mois": {
       "type": "enumeration",
       "enum": [
         "Tous",

@@ -15,12 +15,12 @@
     "titre": {
       "type": "string"
     },
-    "Niveau": {
+    "niveau": {
       "type": "component",
       "repeatable": false,
       "component": "niveau.difficulte"
     },
-    "Question": {
+    "questions": {
       "type": "component",
       "repeatable": true,
       "component": "quizz.question"
@@ -36,6 +36,27 @@
       "relation": "manyToMany",
       "target": "api::categorie.categorie",
       "inversedBy": "quizzes"
+    },
+    "duree": {
+      "type": "string"
+    },
+    "points": {
+      "type": "integer",
+      "max": 1000,
+      "min": 0
+    },
+    "sousTitre": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
