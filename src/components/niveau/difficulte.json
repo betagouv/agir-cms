@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "niveau": {
+    "difficulty": {
       "type": "integer",
       "default": 1,
       "required": true,
