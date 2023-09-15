@@ -19,6 +19,52 @@
     "description": {
       "type": "richtext"
     },
+    "echelle": {
+      "type": "enumeration",
+      "enum": [
+        "locale",
+        "nationale"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "revenuFiscal": {
+      "type": "boolean"
+    },
+    "typeVehicule": {
+      "type": "text"
+    },
+    "regleFiscal": {
+      "type": "text"
+    },
+    "propietaire": {
+      "type": "boolean"
+    },
+    "locataire": {
+      "type": "boolean"
+    },
+    "propietaireBailleur": {
+      "type": "boolean"
+    },
+    "codePostal": {
+      "type": "string"
+    },
+    "dateConstruction": {
+      "type": "string"
+    },
+    "aides": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::aide.aide",
+      "mappedBy": "aide"
+    },
+    "aide": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::aide.aide",
+      "inversedBy": "aides"
+    },
     "sujets": {
       "type": "relation",
       "relation": "manyToMany",

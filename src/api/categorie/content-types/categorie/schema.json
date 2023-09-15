@@ -21,16 +21,16 @@
       "target": "api::article.article",
       "inversedBy": "categories"
     },
-    "aides": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::aide.aide",
-      "mappedBy": "sujets"
-    },
     "quizzes": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::quizz.quizz",
+      "mappedBy": "sujets"
+    },
+    "aides": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aide.aide",
       "mappedBy": "sujets"
     }
   }
