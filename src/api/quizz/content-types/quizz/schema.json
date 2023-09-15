@@ -61,6 +61,12 @@
     },
     "frequence": {
       "type": "string"
+    },
+    "difficulty": {
+      "type": "integer",
+      "max": 5,
+      "min": 1,
+      "default": 1
     }
   }
 }
