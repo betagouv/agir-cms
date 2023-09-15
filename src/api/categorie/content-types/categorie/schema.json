@@ -4,7 +4,7 @@
   "info": {
     "singularName": "categorie",
     "pluralName": "categories",
-    "displayName": "Sujet",
+    "displayName": "Thématique",
     "description": ""
   },
   "options": {
@@ -15,23 +15,23 @@
     "titre": {
       "type": "string"
     },
-    "articles": {
+    "aides": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::article.article",
-      "inversedBy": "categories"
+      "target": "api::aide.aide",
+      "mappedBy": "thematiques"
     },
     "quizzes": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::quizz.quizz",
-      "mappedBy": "sujets"
+      "mappedBy": "thematiques"
     },
-    "aides": {
+    "articles": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::aide.aide",
-      "mappedBy": "sujets"
+      "target": "api::article.article",
+      "mappedBy": "thematiques"
     }
   }
 }

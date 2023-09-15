@@ -37,11 +37,11 @@
     "source": {
       "type": "string"
     },
-    "categories": {
+    "thematiques": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::categorie.categorie",
-      "mappedBy": "articles"
+      "inversedBy": "articles"
     },
     "partenaire": {
       "type": "relation",

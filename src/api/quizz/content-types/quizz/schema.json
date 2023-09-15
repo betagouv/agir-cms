@@ -31,7 +31,7 @@
       "target": "api::article.article",
       "mappedBy": "quizzes"
     },
-    "sujets": {
+    "thematiques": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::categorie.categorie",

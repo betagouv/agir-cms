@@ -65,7 +65,7 @@
       "target": "api::aide.aide",
       "inversedBy": "aides"
     },
-    "sujets": {
+    "thematiques": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::categorie.categorie",
