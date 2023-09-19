@@ -64,6 +64,12 @@
       "relation": "manyToOne",
       "target": "api::aide.aide",
       "inversedBy": "aides"
+    },
+    "thematiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::thematique.thematique",
+      "mappedBy": "aides"
     }
   }
 }

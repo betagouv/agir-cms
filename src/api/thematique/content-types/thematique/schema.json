@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thematiques",
+  "info": {
+    "singularName": "thematique",
+    "pluralName": "thematiques",
+    "displayName": "Thématique"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "thematiques"
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quizz.quizz",
+      "inversedBy": "thematiques"
+    },
+    "aides": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aide.aide",
+      "inversedBy": "thematiques"
+    },
+    "quizzes_gamification": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quizz.quizz",
+      "mappedBy": "thematique_gamification"
+    }
+  }
+}

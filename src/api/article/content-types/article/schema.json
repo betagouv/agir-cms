@@ -79,6 +79,12 @@
       "min": 1,
       "default": 1,
       "required": false
+    },
+    "thematiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::thematique.thematique",
+      "mappedBy": "articles"
     }
   }
 }

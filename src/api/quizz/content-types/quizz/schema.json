@@ -61,6 +61,18 @@
       "max": 5,
       "min": 1,
       "default": 1
+    },
+    "thematiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::thematique.thematique",
+      "mappedBy": "quizzes"
+    },
+    "thematique_gamification": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::thematique.thematique",
+      "inversedBy": "quizzes_gamification"
     }
   }
 }
