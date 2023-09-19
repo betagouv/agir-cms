@@ -31,12 +31,6 @@
       "target": "api::article.article",
       "mappedBy": "quizzes"
     },
-    "thematiques": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::categorie.categorie",
-      "inversedBy": "quizzes"
-    },
     "duree": {
       "type": "string"
     },

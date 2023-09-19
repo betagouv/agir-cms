@@ -37,12 +37,6 @@
     "source": {
       "type": "string"
     },
-    "thematiques": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::categorie.categorie",
-      "inversedBy": "articles"
-    },
     "partenaire": {
       "type": "relation",
       "relation": "manyToOne",
