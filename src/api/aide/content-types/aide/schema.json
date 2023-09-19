@@ -70,6 +70,12 @@
       "relation": "manyToMany",
       "target": "api::thematique.thematique",
       "mappedBy": "aides"
+    },
+    "rubriques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::rubrique.rubrique",
+      "mappedBy": "aides"
     }
   }
 }

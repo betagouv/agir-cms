@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rubriques",
+  "info": {
+    "singularName": "rubrique",
+    "pluralName": "rubriques",
+    "displayName": "Rubrique"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "thematique": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::thematique.thematique",
+      "inversedBy": "rubriques"
+    },
+    "aides": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aide.aide",
+      "inversedBy": "rubriques"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "rubriques"
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quizz.quizz",
+      "inversedBy": "rubriques"
+    }
+  }
+}

@@ -37,6 +37,12 @@
       "relation": "oneToMany",
       "target": "api::quizz.quizz",
       "mappedBy": "thematique_gamification"
+    },
+    "rubriques": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rubrique.rubrique",
+      "mappedBy": "thematique"
     }
   }
 }
