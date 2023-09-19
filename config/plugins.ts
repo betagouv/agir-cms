@@ -13,4 +13,18 @@ export default ({ env }) => ({
       },
     },
   },
+  "preview-button": {
+    config: {
+      contentTypes: [
+        {
+          uid: "api::article.article",
+          draft: {
+            url: env("FRONT_URL") + "/article/previsualisation/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+      ],
+    },
+  },
 });
