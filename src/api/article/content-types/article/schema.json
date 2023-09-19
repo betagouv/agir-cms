@@ -43,21 +43,11 @@
       "target": "api::partenaire.partenaire",
       "inversedBy": "articles"
     },
-    "niveau": {
-      "type": "component",
-      "repeatable": false,
-      "component": "niveau.difficulte"
-    },
     "quizzes": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::quizz.quizz",
       "inversedBy": "articles"
-    },
-    "saison": {
-      "type": "component",
-      "repeatable": false,
-      "component": "periode.saison"
     },
     "codePostal": {
       "type": "string"
