@@ -49,7 +49,7 @@
       "target": "api::quizz.quizz",
       "inversedBy": "articles"
     },
-    "codePostal": {
+    "codes_postaux": {
       "type": "string"
     },
     "duree": {

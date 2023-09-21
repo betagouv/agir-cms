@@ -47,7 +47,7 @@
     "propietaireBailleur": {
       "type": "boolean"
     },
-    "codePostal": {
+    "codes_postaux": {
       "type": "string"
     },
     "dateConstruction": {
