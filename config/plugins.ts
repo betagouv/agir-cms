@@ -27,7 +27,7 @@ export default ({ env }) => ({
         {
           uid: "api::quizz.quizz",
           draft: {
-            url: env("FRONT_URL") + "coach/quiz/previsualisation/{id}",
+            url: env("FRONT_URL") + "/coach/quiz/previsualisation/{id}",
             openTarget: "_blank",
             alwaysVisible: true,
           },
