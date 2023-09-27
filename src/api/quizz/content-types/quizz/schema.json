@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "titre": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "questions": {
       "type": "component",
@@ -27,12 +28,14 @@
       "mappedBy": "quizzes"
     },
     "duree": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "points": {
       "type": "integer",
       "max": 1000,
-      "min": 0
+      "min": 0,
+      "required": true
     },
     "sousTitre": {
       "type": "string"
@@ -40,7 +43,7 @@
     "imageUrl": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
