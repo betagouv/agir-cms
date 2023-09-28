@@ -4,7 +4,8 @@
   "info": {
     "singularName": "thematique",
     "pluralName": "thematiques",
-    "displayName": "Thématique"
+    "displayName": "Thématique",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -43,6 +44,12 @@
       "relation": "oneToMany",
       "target": "api::rubrique.rubrique",
       "mappedBy": "thematique"
+    },
+    "articles_gamifications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "thematique_gamification"
     }
   }
 }

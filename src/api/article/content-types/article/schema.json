@@ -81,6 +81,12 @@
       "relation": "manyToMany",
       "target": "api::rubrique.rubrique",
       "mappedBy": "articles"
+    },
+    "thematique_gamification": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::thematique.thematique",
+      "inversedBy": "articles_gamifications"
     }
   }
 }
