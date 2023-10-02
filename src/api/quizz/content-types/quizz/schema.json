@@ -70,7 +70,8 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::thematique.thematique",
-      "inversedBy": "quizzes_gamification"
+      "inversedBy": "quizzes_gamification",
+      "required": true
     },
     "rubriques": {
       "type": "relation",

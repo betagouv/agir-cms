@@ -85,6 +85,9 @@
     },
     "sousTitre": {
       "type": "string"
+    },
+    "montantMaximum": {
+      "type": "string"
     }
   }
 }
