@@ -64,7 +64,8 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::thematique.thematique",
-      "mappedBy": "quizzes"
+      "mappedBy": "quizzes",
+      "required": true
     },
     "thematique_gamification": {
       "type": "relation",
@@ -78,6 +79,11 @@
       "relation": "manyToMany",
       "target": "api::rubrique.rubrique",
       "mappedBy": "quizzes"
+    },
+    "partenaire": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::partenaire.partenaire"
     }
   }
 }
