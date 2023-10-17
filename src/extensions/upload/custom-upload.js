@@ -202,10 +202,6 @@ module.exports = ({ strapi }) => ({
         });
 
         // For performance reasons, all uploads are wrapped in a single Promise.all
-        const uploadThumbnail = async (thumbnailFile) => {
-            await getService('provider').upload(thumbnailFile);
-            _.set(fileData, 'formats.thumbnail', thumbnailFile);
-        };
 
         // Generate thumbnail and responsive formats
         const uploadResponsiveFormat = async (format) => {
@@ -221,10 +217,10 @@ module.exports = ({ strapi }) => ({
 
         // Generate & Upload thumbnail and responsive formats
         if (await isResizableImage(fileData)) {
-            const thumbnailFile = await generateThumbnail(fileData);
+            /*const thumbnailFile = await generateThumbnail(fileData);
             if (thumbnailFile) {
                 uploadPromises.push(uploadThumbnail(thumbnailFile));
-            }
+            }*/
 
             const formats = await generateResponsiveFormats(fileData);
             if (Array.isArray(formats) && formats.length > 0) {
@@ -257,6 +253,8 @@ module.exports = ({ strapi }) => ({
 
         _.set(fileData, 'provider', config.provider);
 
+
+
         // code custom
         const { width, height } = await getDimensionsFromRemoteImage(fileData.url);
         _.assign(fileData, {
@@ -264,6 +262,23 @@ module.exports = ({ strapi }) => ({
             width,
             height,
         });
+
+
+        // custom, generate thumbnail with cloudinary :
+        const thumbnailFile = {
+            name: fileData.name,
+            hash: fileData.hash,
+            ext: fileData.ext,
+            mime: fileData.mime,
+            path: fileData.path || null,
+            url: fileData.url.replace('/image/upload/', '/image/upload/t_media_lib_thumb/'),
+            provider_metadata: fileData.provider_metadata,
+        };
+        const { thumbnail_width, thumbnail_height } = await getDimensionsFromRemoteImage(thumbnailFile.url);
+        thumbnailFile.height = thumbnail_height;
+        thumbnailFile.width = thumbnail_width;
+
+        _.set(fileData, 'formats.thumbnail', thumbnailFile);
         // Persist file(s)
         return this.add(fileData, { user });
     },
