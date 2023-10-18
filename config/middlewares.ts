@@ -9,6 +9,8 @@ export default [
           "connect-src": ["'self'", "https:"],
           "img-src": ["'self'", "data:", "blob:", "res.cloudinary.com"],
           "media-src": ["'self'", "data:", "blob:", "res.cloudinary.com"],
+          "frame-src": ["'self'", "www.youtube.com", "youtube.com"],
+          "script-src": ["'self'", "www.youtube.com", "youtube.com"],
           upgradeInsecureRequests: null,
         },
       },
