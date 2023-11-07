@@ -1,3 +1,57 @@
+# Installation et premier lancement local
+
+## Récupération du repo
+
+`git clone git@github.com:betagouv/agir-cms.git`
+
+## Installation
+
+Avoir une version de node adéquate
+
+`">=14.19.1 <=18.x.x"`
+
+Utiliser pour cela par exemple NVM :
+
+`nvm use 18`
+
+Installer les dépendences
+
+`yarn install`
+
+Copier le fichier .env.exemple en fichier .env
+
+Récupérer les valeurs de la platforme Scalingo pour la section
+
+```
+APP_KEYS="toBeModified1,toBeModified2"
+API_TOKEN_SALT=tobemodified
+ADMIN_JWT_SECRET=tobemodified
+TRANSFER_TOKEN_SALT=tobemodified
+JWT_SECRET=tobemodified
+```
+
+Si vous utilisez le docker-compose fourni, alors le reste peut être renseigné comme suit
+
+```
+HOST=0.0.0.0
+PORT=1337
+DATABASE_CLIENT=postgres
+DATABASE_HOST=127.0.0.1
+DATABASE_PORT=2345
+DATABASE_NAME=agir-cms
+DATABASE_USERNAME=agir-cms
+DATABASE_PASSWORD=agir-cms
+DATABASE_SSL=false
+```
+
+Lancer la base de donnée configurée dans docker compose
+
+`npm run db:up`
+
+puis lancer le CMS
+
+`yarn develop`
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
