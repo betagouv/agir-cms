@@ -50,6 +50,12 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "thematique_gamification"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service.service",
+      "mappedBy": "thematiques"
     }
   }
 }
