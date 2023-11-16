@@ -4,16 +4,14 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "Service"
+    "displayName": "Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "icon": {
-      "type": "string"
-    },
     "titre": {
       "type": "string",
       "required": true
@@ -25,6 +23,23 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "thematiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::thematique.thematique",
+      "inversedBy": "services"
+    },
+    "icone": {
       "allowedTypes": [
         "images",
         "files",
@@ -33,12 +48,6 @@
       ],
       "type": "media",
       "multiple": false
-    },
-    "thematiques": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::thematique.thematique",
-      "inversedBy": "services"
     }
   }
 }
