@@ -17,6 +17,7 @@
     "@strapi/strapi": "4.13.2",
     "image-size": "^1.0.2",
     "pg": "8.8.0",
+    "strapi-plugin-import-export-entries": "^1.22.0",
     "strapi-plugin-preview-button": "^2.0.0",
     "strapi-tiptap-editor": "^0.9.12"
   },
