@@ -78,8 +78,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::thematique.thematique",
-      "mappedBy": "articles",
-      "required": true
+      "mappedBy": "articles"
     },
     "rubriques": {
       "type": "relation",
@@ -91,8 +90,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::thematique.thematique",
-      "inversedBy": "articles_gamifications",
-      "required": true
+      "inversedBy": "articles_gamifications"
     }
   }
 }
