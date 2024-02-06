@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sources_sources",
+  "info": {
+    "displayName": "source",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "libelle": {
+      "type": "string"
+    },
+    "lien": {
+      "type": "string",
+      "regex": "^https?://"
+    }
+  }
+}
