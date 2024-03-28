@@ -16,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "sous_titre": {
+    "sousTitre": {
       "type": "string"
     },
     "astuces": {
