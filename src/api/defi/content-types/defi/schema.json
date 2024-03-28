@@ -25,9 +25,9 @@
     "pourquoi": {
       "type": "richtext"
     },
-    "thematiques": {
+    "thematique": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::thematique.thematique",
       "inversedBy": "defis"
     },

@@ -59,9 +59,9 @@
     },
     "defis": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::defi.defi",
-      "mappedBy": "thematiques"
+      "mappedBy": "thematique"
     }
   }
 }
