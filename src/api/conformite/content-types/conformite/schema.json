@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conformites",
+  "info": {
+    "singularName": "conformite",
+    "pluralName": "conformites",
+    "displayName": "Conformité",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contenu": {
+      "type": "richtext",
+      "required": true
+    },
+    "Titre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
