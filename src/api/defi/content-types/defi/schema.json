@@ -20,10 +20,12 @@
       "type": "string"
     },
     "astuces": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "pourquoi": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "thematique": {
       "type": "relation",
