@@ -56,6 +56,12 @@
       "relation": "manyToMany",
       "target": "api::service.service",
       "mappedBy": "thematiques"
+    },
+    "defis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::defi.defi",
+      "mappedBy": "thematiques"
     }
   }
 }

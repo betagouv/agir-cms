@@ -4,7 +4,8 @@
   "info": {
     "singularName": "defi",
     "pluralName": "defis",
-    "displayName": "Defi"
+    "displayName": "Defi",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,33 @@
   "pluginOptions": {},
   "attributes": {
     "titre": {
+      "type": "string",
+      "required": true
+    },
+    "sous_titre": {
       "type": "string"
+    },
+    "astuces": {
+      "type": "richtext"
+    },
+    "pourquoi": {
+      "type": "richtext"
+    },
+    "thematiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::thematique.thematique",
+      "inversedBy": "defis"
+    },
+    "points": {
+      "type": "integer",
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "defis"
     }
   }
 }
