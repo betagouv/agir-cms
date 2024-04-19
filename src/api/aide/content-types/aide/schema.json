@@ -56,6 +56,12 @@
     },
     "montantMaximum": {
       "type": "string"
+    },
+    "besoin": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::besoin.besoin",
+      "inversedBy": "aides"
     }
   }
 }
