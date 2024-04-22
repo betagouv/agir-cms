@@ -20,6 +20,12 @@
       "relation": "manyToMany",
       "target": "api::defi.defi",
       "mappedBy": "tags"
+    },
+    "aides": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aide.aide",
+      "mappedBy": "tags"
     }
   }
 }
