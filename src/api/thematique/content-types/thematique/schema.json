@@ -62,6 +62,17 @@
       "relation": "oneToMany",
       "target": "api::defi.defi",
       "mappedBy": "thematique"
+    },
+    "code": {
+      "type": "string",
+      "required": false
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

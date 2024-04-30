@@ -30,6 +30,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "label": {
+      "type": "string"
     }
   }
 }
