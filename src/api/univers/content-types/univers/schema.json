@@ -33,6 +33,12 @@
     },
     "label": {
       "type": "string"
+    },
+    "thematique_univers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thematique-univers.thematique-univers",
+      "mappedBy": "univers_parent"
     }
   }
 }

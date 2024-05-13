@@ -33,6 +33,12 @@
     },
     "label": {
       "type": "string"
+    },
+    "univers_parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::univers.univers",
+      "inversedBy": "thematique_univers"
     }
   }
 }
