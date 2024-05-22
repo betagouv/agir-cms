@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_kyc_reponses",
+  "info": {
+    "displayName": "reponses",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reponse": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

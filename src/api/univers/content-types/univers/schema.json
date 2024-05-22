@@ -39,6 +39,12 @@
       "relation": "oneToMany",
       "target": "api::thematique-univers.thematique-univers",
       "mappedBy": "univers_parent"
+    },
+    "kycs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kyc.kyc",
+      "mappedBy": "univers"
     }
   }
 }

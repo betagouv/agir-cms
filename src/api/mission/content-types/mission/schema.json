@@ -29,7 +29,7 @@
       "target": "api::thematique-univers.thematique-univers",
       "mappedBy": "missions"
     },
-    "objectif": {
+    "objectifs": {
       "type": "component",
       "repeatable": true,
       "component": "mission.objectif",

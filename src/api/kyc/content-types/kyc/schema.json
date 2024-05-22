@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kycs",
+  "info": {
+    "singularName": "kyc",
+    "pluralName": "kycs",
+    "displayName": "KYC",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "libre",
+        "choix_unique",
+        "choix_multiple",
+        "entier",
+        "decimal"
+      ],
+      "required": true
+    },
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "mission",
+        "recommandation"
+      ],
+      "required": true
+    },
+    "points": {
+      "type": "integer",
+      "required": true
+    },
+    "is_ngc": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "reponses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "kyc.reponses",
+      "required": true
+    },
+    "thematique": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thematique.thematique",
+      "inversedBy": "kyc"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "kycs"
+    },
+    "univers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::univers.univers",
+      "inversedBy": "kycs"
+    }
+  }
+}

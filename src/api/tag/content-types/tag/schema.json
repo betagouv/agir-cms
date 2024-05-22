@@ -26,6 +26,12 @@
       "relation": "manyToMany",
       "target": "api::aide.aide",
       "mappedBy": "tags"
+    },
+    "kycs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kyc.kyc",
+      "mappedBy": "tags"
     }
   }
 }

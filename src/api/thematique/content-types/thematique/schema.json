@@ -73,6 +73,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "kyc": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kyc.kyc",
+      "mappedBy": "thematique"
     }
   }
 }
