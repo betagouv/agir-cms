@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_mission_objectifs",
+  "info": {
+    "displayName": "Objectif"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    },
+    "quizz": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quizz.quizz"
+    },
+    "defi": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::defi.defi"
+    },
+    "points": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
