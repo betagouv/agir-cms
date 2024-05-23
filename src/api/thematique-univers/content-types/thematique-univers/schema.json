@@ -40,17 +40,17 @@
       "target": "api::univers.univers",
       "inversedBy": "thematique_univers"
     },
-    "mission": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::mission.mission",
-      "mappedBy": "thematique_univers"
-    },
     "missions": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::mission.mission",
       "inversedBy": "prochaines_thematiques"
+    },
+    "mission": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mission.mission",
+      "mappedBy": "thematique_univers_unique"
     }
   }
 }
