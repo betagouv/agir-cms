@@ -35,7 +35,9 @@
       "type": "enumeration",
       "enum": [
         "mission",
-        "recommandation"
+        "recommandation",
+        "default",
+        "test"
       ],
       "required": true
     },
@@ -52,7 +54,7 @@
       "type": "component",
       "repeatable": true,
       "component": "kyc.reponses",
-      "required": true
+      "required": false
     },
     "thematique": {
       "type": "relation",
