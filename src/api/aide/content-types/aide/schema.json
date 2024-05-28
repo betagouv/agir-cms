@@ -34,7 +34,7 @@
       "type": "string"
     },
     "codes_postaux": {
-      "type": "string"
+      "type": "text"
     },
     "thematiques": {
       "type": "relation",
