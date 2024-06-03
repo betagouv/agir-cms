@@ -18,7 +18,8 @@
     },
     "code": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "type": {
       "type": "enumeration",
