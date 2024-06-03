@@ -96,6 +96,16 @@
       "type": "component",
       "repeatable": true,
       "component": "sources.source"
+    },
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "recommandation",
+        "mission",
+        "test"
+      ],
+      "required": false,
+      "default": "recommandation"
     }
   }
 }

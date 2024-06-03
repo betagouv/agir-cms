@@ -37,10 +37,10 @@
       "enum": [
         "mission",
         "recommandation",
-        "default",
         "test"
       ],
-      "required": true
+      "required": true,
+      "default": "recommandation"
     },
     "points": {
       "type": "integer",

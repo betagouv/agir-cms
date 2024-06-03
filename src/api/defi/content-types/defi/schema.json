@@ -54,6 +54,15 @@
       "relation": "manyToMany",
       "target": "api::thematique-univers.thematique-univers",
       "inversedBy": "defis"
+    },
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "recommandation",
+        "mission",
+        "test"
+      ],
+      "default": "recommandation"
     }
   }
 }
