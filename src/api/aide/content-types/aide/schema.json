@@ -26,8 +26,11 @@
     "echelle": {
       "type": "enumeration",
       "enum": [
-        "locale",
-        "nationale"
+        "Etat",
+        "Région",
+        "Département",
+        "Métropole",
+        "Commune"
       ]
     },
     "url_source": {
