@@ -66,6 +66,11 @@
     },
     "mois": {
       "type": "string"
+    },
+    "OR_Conditions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "defi.non"
     }
   }
 }

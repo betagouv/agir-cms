@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_defi_nons",
+  "info": {
+    "displayName": "ET",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "AND_Conditions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "defi.condition"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_defi_conditions",
+  "info": {
+    "displayName": "Condition",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kyc": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kyc.kyc"
+    },
+    "code_reponse": {
+      "type": "string"
+    }
+  }
+}
