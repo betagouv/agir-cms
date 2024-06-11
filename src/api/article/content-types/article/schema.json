@@ -54,7 +54,7 @@
       "inversedBy": "articles"
     },
     "codes_postaux": {
-      "type": "string"
+      "type": "text"
     },
     "duree": {
       "type": "string"
