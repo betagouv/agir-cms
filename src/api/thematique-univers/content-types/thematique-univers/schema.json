@@ -51,6 +51,10 @@
       "relation": "oneToOne",
       "target": "api::mission.mission",
       "mappedBy": "thematique_univers_unique"
+    },
+    "niveau": {
+      "type": "integer",
+      "required": false
     }
   }
 }
