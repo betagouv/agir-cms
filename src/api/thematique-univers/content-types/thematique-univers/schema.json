@@ -55,6 +55,12 @@
     "niveau": {
       "type": "integer",
       "required": false
+    },
+    "famille": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::famille.famille",
+      "inversedBy": "thematique_univers"
     }
   }
 }
