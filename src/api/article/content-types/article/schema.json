@@ -109,6 +109,18 @@
     },
     "mois": {
       "type": "string"
+    },
+    "include_codes_commune": {
+      "type": "text"
+    },
+    "exclude_codes_commune": {
+      "type": "text"
+    },
+    "codes_departement": {
+      "type": "text"
+    },
+    "codes_region": {
+      "type": "text"
     }
   }
 }
