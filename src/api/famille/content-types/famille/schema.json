@@ -20,7 +20,7 @@
     "ordre": {
       "type": "integer",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "thematique_univers": {
       "type": "relation",
