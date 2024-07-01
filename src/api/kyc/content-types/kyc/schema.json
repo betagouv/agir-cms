@@ -74,6 +74,9 @@
       "relation": "manyToMany",
       "target": "api::univers.univers",
       "inversedBy": "kycs"
+    },
+    "ngc_key": {
+      "type": "string"
     }
   }
 }
