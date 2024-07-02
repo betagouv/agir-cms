@@ -13,6 +13,9 @@
     "code": {
       "type": "string",
       "required": true
+    },
+    "ngc_code": {
+      "type": "string"
     }
   }
 }
