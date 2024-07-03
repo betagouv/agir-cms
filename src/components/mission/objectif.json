@@ -33,6 +33,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::kyc.kyc"
+    },
+    "tag_article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tag-article.tag-article"
     }
   }
 }

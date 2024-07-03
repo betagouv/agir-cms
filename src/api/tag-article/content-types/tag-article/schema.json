@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tag_articles",
+  "info": {
+    "singularName": "tag-article",
+    "pluralName": "tag-articles",
+    "displayName": "Tag_Article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "tag_article"
+    }
+  }
+}
