@@ -47,6 +47,14 @@ export default ({ env }) => ({
           },
         },
         {
+          uid: "api::univers.univers",
+          draft: {
+            url: env("BACK_DEV_URL") + "/univers_preview/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+        {
           uid: "api::quizz.quizz",
           draft: {
             url: env("FRONT_URL") + "/agir/quiz/previsualisation/{id}",
