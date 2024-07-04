@@ -55,6 +55,14 @@ export default ({ env }) => ({
           },
         },
         {
+          uid: "api::defi.defi",
+          draft: {
+            url: env("BACK_DEV_URL") + "/defi_preview/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+        {
           uid: "api::quizz.quizz",
           draft: {
             url: env("FRONT_URL") + "/agir/quiz/previsualisation/{id}",
