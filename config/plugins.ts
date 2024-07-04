@@ -39,6 +39,14 @@ export default ({ env }) => ({
           },
         },
         {
+          uid: "api::mission.mission",
+          draft: {
+            url: env("BACK_DEV_URL") + "/mission_preview/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+        {
           uid: "api::quizz.quizz",
           draft: {
             url: env("FRONT_URL") + "/agir/quiz/previsualisation/{id}",
