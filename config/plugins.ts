@@ -31,6 +31,14 @@ export default ({ env }) => ({
           },
         },
         {
+          uid: "api::kyc.kyc",
+          draft: {
+            url: env("BACK_DEV_URL") + "/kyc_preview/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+        {
           uid: "api::quizz.quizz",
           draft: {
             url: env("FRONT_URL") + "/agir/quiz/previsualisation/{id}",
