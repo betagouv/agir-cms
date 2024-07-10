@@ -104,7 +104,7 @@
         "mission",
         "test"
       ],
-      "required": false,
+      "required": true,
       "default": "recommandation"
     },
     "mois": {
