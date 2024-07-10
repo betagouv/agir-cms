@@ -21,11 +21,11 @@
     },
     "astuces": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "pourquoi": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "thematique": {
       "type": "relation",
