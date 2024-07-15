@@ -59,9 +59,9 @@
     },
     "thematique": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::thematique.thematique",
-      "inversedBy": "kyc"
+      "inversedBy": "kycs"
     },
     "tags": {
       "type": "relation",
