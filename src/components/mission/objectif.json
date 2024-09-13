@@ -38,6 +38,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::tag-article.tag-article"
+    },
+    "mosaic": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mosaic.mosaic"
     }
   }
 }
