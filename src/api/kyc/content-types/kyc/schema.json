@@ -77,6 +77,16 @@
     },
     "ngc_key": {
       "type": "string"
+    },
+    "short_question": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
