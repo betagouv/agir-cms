@@ -31,7 +31,8 @@
         "Département",
         "Métropole",
         "Agglomération",
-        "Commune"
+        "Commune",
+        "Communauté de communes"
       ]
     },
     "url_source": {
