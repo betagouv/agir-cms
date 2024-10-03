@@ -45,11 +45,6 @@
       "relation": "manyToMany",
       "target": "api::kyc.kyc",
       "mappedBy": "univers"
-    },
-    "is_locked": {
-      "type": "boolean",
-      "default": true,
-      "required": true
     }
   }
 }
