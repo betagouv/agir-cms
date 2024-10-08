@@ -82,11 +82,17 @@
       "type": "string"
     },
     "imageUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "OR_Conditions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "defi.non"
     }
   }
 }
