@@ -40,12 +40,6 @@
       "target": "api::univers.univers",
       "inversedBy": "thematique_univers"
     },
-    "missions": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::mission.mission",
-      "inversedBy": "prochaines_thematiques"
-    },
     "mission": {
       "type": "relation",
       "relation": "oneToOne",

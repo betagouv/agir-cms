@@ -23,12 +23,6 @@
       "default": true,
       "required": true
     },
-    "prochaines_thematiques": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::thematique-univers.thematique-univers",
-      "mappedBy": "missions"
-    },
     "objectifs": {
       "type": "component",
       "repeatable": true,
