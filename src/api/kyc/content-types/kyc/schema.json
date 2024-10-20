@@ -93,6 +93,16 @@
       "type": "component",
       "repeatable": true,
       "component": "defi.non"
+    },
+    "unite": {
+      "type": "enumeration",
+      "enum": [
+        "kg (kilogramme)",
+        "g (gramme)",
+        "km (kilomètre)",
+        "L (litre)",
+        "€ (euro)"
+      ]
     }
   }
 }
