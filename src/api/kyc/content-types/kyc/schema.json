@@ -103,6 +103,9 @@
         "l (litre)",
         "euro (euro)"
       ]
+    },
+    "emoji": {
+      "type": "string"
     }
   }
 }
