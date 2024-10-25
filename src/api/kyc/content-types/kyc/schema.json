@@ -106,6 +106,9 @@
     },
     "emoji": {
       "type": "string"
+    },
+    "A_SUPPRIMER": {
+      "type": "boolean"
     }
   }
 }
