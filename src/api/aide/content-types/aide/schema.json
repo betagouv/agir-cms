@@ -26,14 +26,15 @@
     "echelle": {
       "type": "enumeration",
       "enum": [
-        "Etat",
+        "National",
         "Région",
         "Département",
         "Métropole",
         "Agglomération",
         "Commune",
         "Communauté de communes",
-        "Communauté urbaine"
+        "Communauté urbaine",
+        "Communauté d'agglomération"
       ]
     },
     "url_source": {
