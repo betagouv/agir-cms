@@ -47,6 +47,14 @@
       "relation": "manyToOne",
       "target": "api::thematique.thematique",
       "inversedBy": "missions"
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
