@@ -79,6 +79,12 @@
       "relation": "oneToMany",
       "target": "api::kyc.kyc",
       "mappedBy": "thematique"
+    },
+    "missions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mission.mission",
+      "mappedBy": "thematique"
     }
   }
 }

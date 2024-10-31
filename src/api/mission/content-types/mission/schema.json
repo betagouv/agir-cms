@@ -28,6 +28,25 @@
       "repeatable": true,
       "component": "mission.objectif",
       "required": false
+    },
+    "is_first": {
+      "type": "boolean",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "thematique": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::thematique.thematique",
+      "inversedBy": "missions"
     }
   }
 }
