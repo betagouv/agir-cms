@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "titre": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "articles": {
       "type": "relation",
@@ -65,14 +66,16 @@
     },
     "code": {
       "type": "string",
-      "required": false
+      "required": true,
+      "unique": true
     },
     "imageUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "kycs": {
       "type": "relation",
@@ -85,6 +88,14 @@
       "relation": "oneToMany",
       "target": "api::mission.mission",
       "mappedBy": "thematique"
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "emoji": {
+      "type": "string",
+      "required": true
     }
   }
 }
