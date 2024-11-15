@@ -87,6 +87,9 @@
     },
     "codes_region": {
       "type": "text"
+    },
+    "url_demande": {
+      "type": "string"
     }
   }
 }
