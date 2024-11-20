@@ -49,11 +49,15 @@
       "inversedBy": "missions"
     },
     "imageUrl": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "introduction": {
+      "type": "text",
       "required": true
     }
   }
