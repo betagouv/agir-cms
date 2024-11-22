@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "thematique_univers_unique": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::thematique-univers.thematique-univers",
-      "inversedBy": "mission"
-    },
     "est_visible": {
       "type": "boolean",
       "default": true,

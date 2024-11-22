@@ -17,12 +17,6 @@
       "required": true,
       "unique": true
     },
-    "defis": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::defi.defi",
-      "mappedBy": "univers"
-    },
     "imageUrl": {
       "type": "media",
       "multiple": false,
@@ -33,18 +27,6 @@
     },
     "label": {
       "type": "string"
-    },
-    "thematique_univers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::thematique-univers.thematique-univers",
-      "mappedBy": "univers_parent"
-    },
-    "kycs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::kyc.kyc",
-      "mappedBy": "univers"
     }
   }
 }

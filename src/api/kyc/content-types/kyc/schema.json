@@ -69,12 +69,6 @@
       "target": "api::tag.tag",
       "inversedBy": "kycs"
     },
-    "univers": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::univers.univers",
-      "inversedBy": "kycs"
-    },
     "ngc_key": {
       "type": "string"
     },

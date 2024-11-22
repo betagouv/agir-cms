@@ -17,12 +17,6 @@
       "required": true,
       "unique": true
     },
-    "defis": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::defi.defi",
-      "mappedBy": "thematique_univers"
-    },
     "imageUrl": {
       "type": "media",
       "multiple": false,
@@ -34,27 +28,9 @@
     "label": {
       "type": "string"
     },
-    "univers_parent": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::univers.univers",
-      "inversedBy": "thematique_univers"
-    },
-    "mission": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::mission.mission",
-      "mappedBy": "thematique_univers_unique"
-    },
     "niveau": {
       "type": "integer",
       "required": false
-    },
-    "famille": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::famille.famille",
-      "inversedBy": "thematique_univers"
     }
   }
 }

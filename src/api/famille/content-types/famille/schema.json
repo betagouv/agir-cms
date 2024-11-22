@@ -21,12 +21,6 @@
       "type": "integer",
       "required": true,
       "unique": false
-    },
-    "thematique_univers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::thematique-univers.thematique-univers",
-      "mappedBy": "famille"
     }
   }
 }
