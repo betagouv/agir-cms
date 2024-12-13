@@ -53,6 +53,10 @@
     "introduction": {
       "type": "text",
       "required": true
+    },
+    "is_examen": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
