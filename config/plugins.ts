@@ -63,6 +63,14 @@ export default ({ env }) => ({
           },
         },
         {
+          uid: "api::aide.aide",
+          draft: {
+            url: env("FRONT_URL") + "/aides/previsualisation/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+        {
           uid: "api::quizz.quizz",
           draft: {
             url: env("FRONT_URL") + "/agir/quiz/previsualisation/{id}",
