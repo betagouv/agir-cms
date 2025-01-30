@@ -99,6 +99,9 @@
     },
     "date_expiration": {
       "type": "date"
+    },
+    "derniere_maj": {
+      "type": "date"
     }
   }
 }

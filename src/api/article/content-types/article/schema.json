@@ -127,6 +127,23 @@
       "relation": "manyToOne",
       "target": "api::tag-article.tag-article",
       "inversedBy": "articles"
+    },
+    "echelle": {
+      "type": "enumeration",
+      "enum": [
+        "National",
+        "Région",
+        "Département",
+        "Métropole",
+        "Agglomération",
+        "Commune",
+        "Communauté de communes",
+        "Communauté urbaine",
+        "Communauté d'agglomération"
+      ]
+    },
+    "derniere_maj": {
+      "type": "date"
     }
   }
 }
