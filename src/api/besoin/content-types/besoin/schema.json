@@ -26,6 +26,12 @@
       "relation": "oneToMany",
       "target": "api::aide.aide",
       "mappedBy": "besoin"
+    },
+    "actions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action.action",
+      "mappedBy": "besoins"
     }
   }
 }

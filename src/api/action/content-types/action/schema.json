@@ -26,6 +26,77 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "sous_titre": {
+      "type": "string",
+      "required": false
+    },
+    "en_quelques_mots": {
+      "type": "text",
+      "required": false
+    },
+    "astuces": {
+      "type": "text"
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quizz.quizz",
+      "inversedBy": "actions"
+    },
+    "kycs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kyc.kyc",
+      "inversedBy": "actions"
+    },
+    "categorie_recettes": {
+      "type": "enumeration",
+      "enum": [
+        "vege",
+        "vegan",
+        "legumineuses",
+        "saison",
+        "volaile"
+      ]
+    },
+    "objet_lvo": {
+      "type": "enumeration",
+      "enum": [
+        "chaussure",
+        "smartphone",
+        "chaise",
+        "portable",
+        "vélo",
+        "voiture"
+      ]
+    },
+    "action_lvo": {
+      "type": "enumeration",
+      "enum": [
+        "donner",
+        "reparer",
+        "vendre",
+        "louer",
+        "acheter",
+        "emprunter"
+      ]
+    },
+    "type_action": {
+      "type": "enumeration",
+      "enum": [
+        "classique",
+        "bilan",
+        "quizz"
+      ],
+      "default": "classique",
+      "required": true
+    },
+    "besoins": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::besoin.besoin",
+      "inversedBy": "actions"
     }
   }
 }
