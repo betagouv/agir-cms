@@ -31,11 +31,11 @@
       "type": "string",
       "required": false
     },
-    "en_quelques_mots": {
+    "pourquoi": {
       "type": "text",
       "required": false
     },
-    "astuces": {
+    "comment": {
       "type": "text"
     },
     "quizzes": {
