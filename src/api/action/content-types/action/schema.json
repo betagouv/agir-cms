@@ -55,11 +55,10 @@
     "categorie_recettes": {
       "type": "enumeration",
       "enum": [
-        "vege",
         "vegan",
-        "legumineuses",
-        "saison",
-        "volaile"
+        "vege",
+        "dinde_volaille",
+        "saison"
       ]
     },
     "objet_lvo": {
