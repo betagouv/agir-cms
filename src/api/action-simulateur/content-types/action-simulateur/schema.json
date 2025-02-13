@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "action_simulateurs",
+  "info": {
+    "singularName": "action-simulateur",
+    "pluralName": "action-simulateurs",
+    "displayName": "Action Simulateur",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "sous_titre": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "minLength": 4,
+      "regex": "^[a-z_]+$"
+    },
+    "kycs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kyc.kyc",
+      "inversedBy": "action_simulateurs"
+    }
+  }
+}
