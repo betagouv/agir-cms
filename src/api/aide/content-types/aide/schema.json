@@ -102,6 +102,11 @@
     },
     "derniere_maj": {
       "type": "date"
+    },
+    "est_gratuit": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
