@@ -102,6 +102,24 @@
       "relation": "oneToMany",
       "target": "api::action.action",
       "mappedBy": "thematique"
+    },
+    "action_classiques": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::action-classique.action-classique",
+      "mappedBy": "thematique"
+    },
+    "action_bilans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::action-bilan.action-bilan",
+      "mappedBy": "thematique"
+    },
+    "action_quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::action-quizz.action-quizz",
+      "mappedBy": "thematique"
     }
   }
 }

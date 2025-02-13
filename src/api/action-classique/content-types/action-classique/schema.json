@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "action_classiques",
+  "info": {
+    "singularName": "action-classique",
+    "pluralName": "action-classiques",
+    "displayName": "Action Classique",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "regex": "^[a-z_]+$",
+      "unique": true,
+      "required": true,
+      "minLength": 4
+    },
+    "sous_titre": {
+      "type": "string"
+    },
+    "pourquoi": {
+      "type": "text",
+      "required": true
+    },
+    "comment": {
+      "type": "text",
+      "required": true
+    },
+    "thematique": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::thematique.thematique",
+      "inversedBy": "action_classiques"
+    },
+    "besoins": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::besoin.besoin",
+      "inversedBy": "action_classiques"
+    },
+    "categorie_recettes": {
+      "type": "enumeration",
+      "enum": [
+        "vegan",
+        "vege",
+        "dinde_volaille",
+        "saison"
+      ]
+    },
+    "action_lvo": {
+      "type": "enumeration",
+      "enum": [
+        "donner",
+        "reparer",
+        "vendre",
+        "louer",
+        "acheter",
+        "emprunter"
+      ]
+    },
+    "objet_lvo": {
+      "type": "enumeration",
+      "enum": [
+        "chaussure",
+        "smartphone",
+        "chaise",
+        "portable",
+        "vélo",
+        "voiture"
+      ]
+    }
+  }
+}

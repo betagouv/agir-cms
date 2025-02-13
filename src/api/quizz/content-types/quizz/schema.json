@@ -104,6 +104,12 @@
       "relation": "manyToMany",
       "target": "api::action.action",
       "mappedBy": "quizzes"
+    },
+    "action_quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-quizz.action-quizz",
+      "mappedBy": "quizzes"
     }
   }
 }

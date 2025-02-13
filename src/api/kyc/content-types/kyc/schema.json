@@ -109,6 +109,12 @@
       "relation": "manyToMany",
       "target": "api::action.action",
       "mappedBy": "kycs"
+    },
+    "action_bilans": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-bilan.action-bilan",
+      "mappedBy": "kycs"
     }
   }
 }
