@@ -31,6 +31,12 @@
       "relation": "manyToMany",
       "target": "api::kyc.kyc",
       "inversedBy": "action_simulateurs"
+    },
+    "thematique": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::thematique.thematique",
+      "inversedBy": "action_simulateurs"
     }
   }
 }
