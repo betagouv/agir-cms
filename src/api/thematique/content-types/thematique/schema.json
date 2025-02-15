@@ -97,12 +97,6 @@
       "type": "string",
       "required": true
     },
-    "actions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::action.action",
-      "mappedBy": "thematique"
-    },
     "action_classiques": {
       "type": "relation",
       "relation": "oneToMany",

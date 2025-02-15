@@ -104,12 +104,6 @@
     "A_SUPPRIMER": {
       "type": "boolean"
     },
-    "actions": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::action.action",
-      "mappedBy": "kycs"
-    },
     "action_bilans": {
       "type": "relation",
       "relation": "manyToMany",

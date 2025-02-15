@@ -99,12 +99,6 @@
     "mois": {
       "type": "string"
     },
-    "actions": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::action.action",
-      "mappedBy": "quizzes"
-    },
     "action_quizzes": {
       "type": "relation",
       "relation": "manyToMany",
