@@ -32,6 +32,12 @@
       "relation": "manyToMany",
       "target": "api::action-classique.action-classique",
       "mappedBy": "besoins"
+    },
+    "action_simulateurs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-simulateur.action-simulateur",
+      "mappedBy": "besoins"
     }
   }
 }

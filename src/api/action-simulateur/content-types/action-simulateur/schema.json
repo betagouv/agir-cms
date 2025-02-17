@@ -40,6 +40,12 @@
     },
     "pourquoi": {
       "type": "text"
+    },
+    "besoins": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::besoin.besoin",
+      "inversedBy": "action_simulateurs"
     }
   }
 }
