@@ -37,6 +37,9 @@
       "relation": "manyToOne",
       "target": "api::thematique.thematique",
       "inversedBy": "action_simulateurs"
+    },
+    "pourquoi": {
+      "type": "text"
     }
   }
 }
