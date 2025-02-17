@@ -95,7 +95,10 @@
         "g (gramme)",
         "km (kilomètre)",
         "l (litre)",
-        "euro (euro)"
+        "€ (euro)",
+        "an",
+        "l/100km (litre au cent)",
+        "€/l (euro par litre)"
       ]
     },
     "emoji": {
