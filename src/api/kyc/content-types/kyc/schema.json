@@ -23,22 +23,12 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": [
-        "libre",
-        "choix_unique",
-        "choix_multiple",
-        "entier",
-        "decimal"
-      ],
+      "enum": ["libre", "choix_unique", "choix_multiple", "entier", "decimal"],
       "required": true
     },
     "categorie": {
       "type": "enumeration",
-      "enum": [
-        "mission",
-        "recommandation",
-        "test"
-      ],
+      "enum": ["mission", "recommandation", "test"],
       "required": true,
       "default": "recommandation"
     },
@@ -79,9 +69,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "OR_Conditions": {
       "type": "component",
@@ -96,6 +84,7 @@
         "km (kilomètre)",
         "l (litre)",
         "€ (euro)",
+        "€/an (euro par an)",
         "an",
         "l/100km (litre au cent)",
         "€/l (euro par litre)",
