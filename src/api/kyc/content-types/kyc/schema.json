@@ -98,7 +98,10 @@
         "€ (euro)",
         "an",
         "l/100km (litre au cent)",
-        "€/l (euro par litre)"
+        "€/l (euro par litre)",
+        "kWh (kilowattheure)",
+        "€/kWh (euro par kilowattheure)",
+        "kWh/100km (kilowattheure au cent)"
       ]
     },
     "emoji": {
