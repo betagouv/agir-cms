@@ -120,6 +120,12 @@
       "relation": "oneToMany",
       "target": "api::action-simulateur.action-simulateur",
       "mappedBy": "thematique"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq",
+      "mappedBy": "thematique"
     }
   }
 }
