@@ -23,7 +23,7 @@
       "minLength": 4
     },
     "texte": {
-      "type": "text",
+      "type": "richtext",
       "required": true
     }
   }
