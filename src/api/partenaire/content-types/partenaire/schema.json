@@ -42,6 +42,21 @@
       "relation": "oneToMany",
       "target": "api::aide.aide",
       "mappedBy": "partenaire"
+    },
+    "echelle": {
+      "type": "enumeration",
+      "enum": [
+        "National",
+        "Région",
+        "Département",
+        "Métropole",
+        "Agglomération",
+        "Commune",
+        "Communauté de communes",
+        "Communauté urbaine",
+        "Communauté d'agglomération"
+      ],
+      "required": true
     }
   }
 }
