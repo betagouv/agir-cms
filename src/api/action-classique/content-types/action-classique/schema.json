@@ -76,6 +76,11 @@
         "vélo",
         "voiture"
       ]
+    },
+    "tags_excluants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tag-excluant"
     }
   }
 }

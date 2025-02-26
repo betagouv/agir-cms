@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_tags_tag_excluants",
+  "info": {
+    "displayName": "Tag Excluant",
+    "icon": "priceTag"
+  },
+  "options": {},
+  "attributes": {
+    "valeur": {
+      "type": "enumeration",
+      "enum": [
+        "ne_prend_pas_avion",
+        "a_un_velo",
+        "na_pas_de_voiture",
+        "a_une_voiture_electrique",
+        "mange_pas_de_viande",
+        "mange_pas_de_viande_rouge",
+        "mange_de_saison",
+        "mange_local",
+        "composte",
+        "vit_en_appart",
+        "est_locataire",
+        "na_pas_de_jardin",
+        "a_chauffage_elec",
+        "a_fait_travaux_recents",
+        "prend_soin_objets",
+        "achete_peu_et_occasion"
+      ]
+    }
+  }
+}

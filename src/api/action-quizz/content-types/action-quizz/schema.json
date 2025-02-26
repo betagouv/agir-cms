@@ -41,6 +41,11 @@
     "felicitations": {
       "type": "string",
       "required": true
+    },
+    "tags_excluants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tag-excluant"
     }
   }
 }
