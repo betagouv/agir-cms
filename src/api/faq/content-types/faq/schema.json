@@ -25,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::thematique.thematique",
       "inversedBy": "faqs"
+    },
+    "action_classiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-classique.action-classique",
+      "inversedBy": "faqs"
     }
   }
 }

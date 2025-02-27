@@ -81,6 +81,12 @@
       "type": "component",
       "repeatable": true,
       "component": "tags.tag-excluant"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::faq.faq",
+      "mappedBy": "action_classiques"
     }
   }
 }
