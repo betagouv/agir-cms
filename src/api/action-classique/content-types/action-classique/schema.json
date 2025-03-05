@@ -88,6 +88,9 @@
       "relation": "manyToMany",
       "target": "api::faq.faq",
       "mappedBy": "action_classiques"
+    },
+    "ngc_action_rule": {
+      "type": "string"
     }
   }
 }
