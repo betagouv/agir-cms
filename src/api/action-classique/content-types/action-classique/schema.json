@@ -91,6 +91,16 @@
     },
     "ngc_action_rule": {
       "type": "string"
+    },
+    "consigne": {
+      "type": "string",
+      "default": "Réalisez cette action dans les prochaines semaines et partagez vos retours",
+      "required": true
+    },
+    "label_compteur": {
+      "type": "string",
+      "default": "**{NBR_classique_123} actions** réalisées par la communauté",
+      "required": true
     }
   }
 }
