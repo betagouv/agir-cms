@@ -99,7 +99,7 @@
     },
     "label_compteur": {
       "type": "string",
-      "default": "**{NBR_classique_123} actions** réalisées par la communauté",
+      "default": "**{NBR_ACTIONS} actions** réalisées par la communauté",
       "required": true
     }
   }
