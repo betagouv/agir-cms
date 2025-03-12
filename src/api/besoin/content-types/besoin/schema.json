@@ -15,7 +15,9 @@
     "code": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "regex": "^[a-z_]+$",
+      "minLength": 4
     },
     "description": {
       "type": "string",
