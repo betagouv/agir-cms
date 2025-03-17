@@ -65,7 +65,7 @@ export default ({ env }) => ({
         {
           uid: "api::aide.aide",
           draft: {
-            url: env("BACK_DEV_URL") + "cms_preview/aides/{id}/html",
+            url: env("BACK_DEV_URL") + "/cms_preview/aides/{id}/html",
             openTarget: "_blank",
             alwaysVisible: true,
           },
