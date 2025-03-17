@@ -25,7 +25,7 @@ export default ({ env }) => ({
         {
           uid: "api::article.article",
           draft: {
-            url: env("FRONT_URL") + "/article/previsualisation/{id}",
+            url: env("BACK_DEV_URL") + "/cms_preview/articles/{id}/html",
             openTarget: "_blank",
             alwaysVisible: true,
           },
