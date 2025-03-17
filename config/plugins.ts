@@ -79,7 +79,7 @@ export default ({ env }) => ({
           },
         },
         {
-          uid: "action-classique.action-classique",
+          uid: "api::action-classique.action-classique",
           draft: {
             url:
               env("BACK_DEV_URL") + "/cms_preview/actions/classique/{id}/html",
