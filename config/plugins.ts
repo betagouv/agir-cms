@@ -78,6 +78,15 @@ export default ({ env }) => ({
             alwaysVisible: true,
           },
         },
+        {
+          uid: "action-classique.action-classique",
+          draft: {
+            url:
+              env("BACK_DEV_URL") + "/cms_preview/actions/classique/{id}/html",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
       ],
     },
   },
