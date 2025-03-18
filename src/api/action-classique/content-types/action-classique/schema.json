@@ -101,6 +101,11 @@
       "type": "string",
       "default": "**{NBR_ACTIONS} actions** réalisées par la communauté",
       "required": true
+    },
+    "sources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sources.source"
     }
   }
 }
