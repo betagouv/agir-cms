@@ -65,7 +65,7 @@ export default ({ env }) => ({
         {
           uid: "api::aide.aide",
           draft: {
-            url: env("BACK_DEV_URL") + "/cms_preview/aides/{id}/html",
+            url: env("FRONT_DEV_URL") + "/aides/previsualisation/{id}",
             openTarget: "_blank",
             alwaysVisible: true,
           },
@@ -73,7 +73,7 @@ export default ({ env }) => ({
         {
           uid: "api::quizz.quizz",
           draft: {
-            url: env("FRONT_URL") + "/agir/quiz/previsualisation/{id}",
+            url: env("FRONT_DEV_URL") + "/agir/quiz/previsualisation/{id}",
             openTarget: "_blank",
             alwaysVisible: true,
           },
@@ -82,7 +82,33 @@ export default ({ env }) => ({
           uid: "api::action-classique.action-classique",
           draft: {
             url:
-              env("BACK_DEV_URL") + "/cms_preview/actions/classique/{id}/html",
+              env("FRONT_DEV_URL") + "/actions/previsualisation/classique/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+        {
+          uid: "api::action-simulateur.action-simulateur",
+          draft: {
+            url:
+              env("FRONT_DEV_URL") +
+              "/actions/previsualisation/simulateur/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+        {
+          uid: "api::action-bilan.action-bilan",
+          draft: {
+            url: env("FRONT_DEV_URL") + "/actions/previsualisation/bilan/{id}",
+            openTarget: "_blank",
+            alwaysVisible: true,
+          },
+        },
+        {
+          uid: "api::action-quizz.action-quizz",
+          draft: {
+            url: env("FRONT_DEV_URL") + "/actions/previsualisation/quizz/{id}",
             openTarget: "_blank",
             alwaysVisible: true,
           },
