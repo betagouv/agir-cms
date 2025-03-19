@@ -106,6 +106,16 @@
       "type": "component",
       "repeatable": true,
       "component": "sources.source"
+    },
+    "categorie_pdcn": {
+      "type": "enumeration",
+      "enum": [
+        "nourriture",
+        "circuit_court",
+        "epicerie_superette",
+        "marche_local",
+        "zero_dechet"
+      ]
     }
   }
 }
