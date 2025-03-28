@@ -46,6 +46,12 @@
       "type": "component",
       "repeatable": true,
       "component": "tags.tag-excluant"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "action_quizzes"
     }
   }
 }

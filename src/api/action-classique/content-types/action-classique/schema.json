@@ -116,6 +116,12 @@
         "marche_local",
         "zero_dechet"
       ]
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "action_classiques"
     }
   }
 }

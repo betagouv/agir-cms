@@ -144,6 +144,18 @@
     },
     "derniere_maj": {
       "type": "date"
+    },
+    "action_classiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-classique.action-classique",
+      "mappedBy": "articles"
+    },
+    "action_quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-quizz.action-quizz",
+      "mappedBy": "articles"
     }
   }
 }
