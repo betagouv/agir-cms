@@ -57,6 +57,12 @@
         "Communauté d'agglomération"
       ],
       "required": true
+    },
+    "code_epci": {
+      "type": "string"
+    },
+    "code_commune": {
+      "type": "string"
     }
   }
 }
