@@ -63,6 +63,12 @@
     },
     "code_commune": {
       "type": "string"
+    },
+    "aides_multi_part": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aide.aide",
+      "mappedBy": "partenaires"
     }
   }
 }

@@ -107,6 +107,12 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "partenaires": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::partenaire.partenaire",
+      "inversedBy": "aides_multi_part"
     }
   }
 }
