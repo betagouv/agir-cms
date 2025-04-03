@@ -37,12 +37,6 @@
       "target": "api::article.article",
       "mappedBy": "partenaire"
     },
-    "aides": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::aide.aide",
-      "mappedBy": "partenaire"
-    },
     "echelle": {
       "type": "enumeration",
       "enum": [

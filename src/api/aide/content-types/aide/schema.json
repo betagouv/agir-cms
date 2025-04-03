@@ -91,12 +91,6 @@
     "url_demande": {
       "type": "string"
     },
-    "partenaire": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::partenaire.partenaire",
-      "inversedBy": "aides"
-    },
     "date_expiration": {
       "type": "date"
     },
