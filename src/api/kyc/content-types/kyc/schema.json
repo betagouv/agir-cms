@@ -94,6 +94,7 @@
         "kg (kilogramme)",
         "g (gramme)",
         "km (kilomètre)",
+        "km/an (kilomètre par an)",
         "l (litre)",
         "€ (euro)",
         "€/an (euro par an)",
@@ -102,7 +103,8 @@
         "€/l (euro par litre)",
         "kWh (kilowattheure)",
         "€/kWh (euro par kilowattheure)",
-        "kWh/100km (kilowattheure au cent)"
+        "kWh/100km (kilowattheure au cent)",
+        "h (heure)"
       ]
     },
     "emoji": {
