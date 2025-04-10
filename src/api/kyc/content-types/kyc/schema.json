@@ -108,7 +108,9 @@
         "€/kWh (euro par kilowattheure)",
         "kWh/100km (kilowattheure au cent)",
         "h (heure)",
-        "m2 (mètre carré)"
+        "m2 (mètre carré)",
+        "nuit (nuit)",
+        "sem (semaine)"
       ]
     },
     "emoji": {
