@@ -111,7 +111,8 @@
         "m2 (mètre carré)",
         "nuit (nuit)",
         "sem (semaine)",
-        "st (stère)"
+        "st (stère)",
+        "p/sem (paquet par semaine)"
       ]
     },
     "emoji": {
