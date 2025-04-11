@@ -112,7 +112,8 @@
         "nuit (nuit)",
         "sem (semaine)",
         "st (stère)",
-        "p/sem (paquet par semaine)"
+        "p/sem (paquet par semaine)",
+        "r/sem (repas par semaine)"
       ]
     },
     "emoji": {
