@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tag_v2s",
+  "info": {
+    "singularName": "tag-v2",
+    "pluralName": "tag-v2s",
+    "displayName": "Tag_v2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "regex": "^[a-z_]+$",
+      "required": true,
+      "unique": true,
+      "minLength": 3
+    },
+    "action_classiques_inclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-classique.action-classique",
+      "mappedBy": "tag_v2_incluants"
+    },
+    "action_classiques_exclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-classique.action-classique",
+      "mappedBy": "tag_v2_excluants"
+    }
+  }
+}

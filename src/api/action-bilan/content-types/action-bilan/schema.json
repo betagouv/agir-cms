@@ -42,11 +42,6 @@
       "type": "component",
       "repeatable": true,
       "component": "tags.tag-excluant"
-    },
-    "tags_incluants": {
-      "type": "component",
-      "repeatable": true,
-      "component": "tags.tag-excluant"
     }
   }
 }
