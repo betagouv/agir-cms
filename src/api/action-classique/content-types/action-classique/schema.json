@@ -122,6 +122,11 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "action_classiques"
+    },
+    "tags_incluants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tag-excluant"
     }
   }
 }
