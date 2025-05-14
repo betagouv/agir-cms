@@ -42,6 +42,18 @@
       "type": "component",
       "repeatable": true,
       "component": "tags.tag-excluant"
+    },
+    "tag_v2_incluants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag-v2.tag-v2",
+      "inversedBy": "action_bilans_inclues"
+    },
+    "tag_v2_excluants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag-v2.tag-v2",
+      "inversedBy": "action_bilans_exclues"
     }
   }
 }

@@ -29,6 +29,54 @@
       "relation": "manyToMany",
       "target": "api::action-classique.action-classique",
       "mappedBy": "tag_v2_excluants"
+    },
+    "action_quizzes_inclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-quizz.action-quizz",
+      "mappedBy": "tag_v2_incluants"
+    },
+    "action_quizzes_exclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-quizz.action-quizz",
+      "mappedBy": "tag_v2_excluants"
+    },
+    "action_simulateurs_inclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-simulateur.action-simulateur",
+      "mappedBy": "tag_v2_incluants"
+    },
+    "action_simulateurs_exclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-simulateur.action-simulateur",
+      "mappedBy": "tag_v2_excluants"
+    },
+    "action_bilans_inclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-bilan.action-bilan",
+      "mappedBy": "tag_v2_incluants"
+    },
+    "action_bilans_exclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-bilan.action-bilan",
+      "mappedBy": "tag_v2_excluants"
+    },
+    "articles_inclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "tag_v2_incluants"
+    },
+    "articles_exclues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "tag_v2_excluants"
     }
   }
 }

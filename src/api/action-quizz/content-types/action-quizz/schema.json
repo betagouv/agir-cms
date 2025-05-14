@@ -52,6 +52,18 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "action_quizzes"
+    },
+    "tag_v2_incluants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag-v2.tag-v2",
+      "inversedBy": "action_quizzes_inclues"
+    },
+    "tag_v2_excluants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag-v2.tag-v2",
+      "inversedBy": "action_quizzes_exclues"
     }
   }
 }

@@ -156,6 +156,18 @@
       "relation": "manyToMany",
       "target": "api::action-quizz.action-quizz",
       "mappedBy": "articles"
+    },
+    "tag_v2_incluants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag-v2.tag-v2",
+      "inversedBy": "articles_inclues"
+    },
+    "tag_v2_excluants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag-v2.tag-v2",
+      "inversedBy": "articles_exclues"
     }
   }
 }
