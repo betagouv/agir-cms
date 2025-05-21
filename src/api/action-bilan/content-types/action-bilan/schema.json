@@ -38,11 +38,6 @@
       "target": "api::thematique.thematique",
       "inversedBy": "action_bilans"
     },
-    "tags_excluants": {
-      "type": "component",
-      "repeatable": true,
-      "component": "tags.tag-excluant"
-    },
     "tag_v2_incluants": {
       "type": "relation",
       "relation": "manyToMany",

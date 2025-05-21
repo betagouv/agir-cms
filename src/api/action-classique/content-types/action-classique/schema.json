@@ -78,11 +78,6 @@
         "voiture"
       ]
     },
-    "tags_excluants": {
-      "type": "component",
-      "repeatable": true,
-      "component": "tags.tag-excluant"
-    },
     "faqs": {
       "type": "relation",
       "relation": "manyToMany",
