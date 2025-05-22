@@ -15,12 +15,6 @@
       "type": "string",
       "required": true
     },
-    "defis": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::defi.defi",
-      "mappedBy": "tags"
-    },
     "aides": {
       "type": "relation",
       "relation": "manyToMany",

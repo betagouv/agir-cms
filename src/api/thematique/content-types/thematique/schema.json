@@ -52,18 +52,6 @@
       "target": "api::article.article",
       "mappedBy": "thematique_gamification"
     },
-    "services": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::service.service",
-      "mappedBy": "thematiques"
-    },
-    "defis": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::defi.defi",
-      "mappedBy": "thematique"
-    },
     "code": {
       "type": "string",
       "required": true,
@@ -81,12 +69,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::kyc.kyc",
-      "mappedBy": "thematique"
-    },
-    "missions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::mission.mission",
       "mappedBy": "thematique"
     },
     "label": {
