@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tag-v2",
     "pluralName": "tag-v2s",
-    "displayName": "Tag_v2"
+    "displayName": "Tag_v2",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -77,6 +78,9 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "tag_v2_excluants"
+    },
+    "informations": {
+      "type": "text"
     }
   }
 }
