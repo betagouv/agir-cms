@@ -58,6 +58,11 @@
       "relation": "manyToMany",
       "target": "api::tag-v2.tag-v2",
       "inversedBy": "action_simulateurs_exclues"
+    },
+    "VISIBLE_PROD": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
