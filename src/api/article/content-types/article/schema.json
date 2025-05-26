@@ -122,12 +122,6 @@
     "codes_region": {
       "type": "text"
     },
-    "tag_article": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::tag-article.tag-article",
-      "inversedBy": "articles"
-    },
     "echelle": {
       "type": "enumeration",
       "enum": [
