@@ -79,8 +79,17 @@
       "target": "api::article.article",
       "mappedBy": "tag_v2_excluants"
     },
-    "informations": {
-      "type": "text"
+    "description": {
+      "type": "string"
+    },
+    "ponderation": {
+      "type": "decimal",
+      "min": 0,
+      "default": 1
+    },
+    "boost_absolu": {
+      "type": "decimal",
+      "min": 0
     }
   }
 }
