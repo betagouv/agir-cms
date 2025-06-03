@@ -68,7 +68,7 @@
       "type": "string",
       "minLength": 2,
       "maxLength": 3,
-      "regex": "^[0123456789]+$"
+      "regex": "^[0123456789AB]+$"
     },
     "code_region": {
       "type": "string",
