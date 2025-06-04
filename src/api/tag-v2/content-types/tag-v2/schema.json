@@ -90,6 +90,10 @@
     "boost_absolu": {
       "type": "decimal",
       "min": 0
+    },
+    "label_explication": {
+      "type": "string",
+      "required": true
     }
   }
 }
