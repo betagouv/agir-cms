@@ -63,6 +63,9 @@
       "type": "boolean",
       "default": true,
       "required": false
+    },
+    "emoji": {
+      "type": "string"
     }
   }
 }

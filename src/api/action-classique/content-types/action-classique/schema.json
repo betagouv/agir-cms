@@ -140,6 +140,9 @@
       "relation": "manyToOne",
       "target": "api::sous-thematique.sous-thematique",
       "inversedBy": "action_classiques"
+    },
+    "emoji": {
+      "type": "string"
     }
   }
 }
