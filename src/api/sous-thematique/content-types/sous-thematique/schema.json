@@ -23,6 +23,24 @@
       "relation": "oneToMany",
       "target": "api::action-classique.action-classique",
       "mappedBy": "sous_thematique"
+    },
+    "action_quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::action-quizz.action-quizz",
+      "mappedBy": "sous_thematique"
+    },
+    "action_simulateurs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::action-simulateur.action-simulateur",
+      "mappedBy": "sous_thematique"
+    },
+    "action_bilans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::action-bilan.action-bilan",
+      "mappedBy": "sous_thematique"
     }
   }
 }
