@@ -56,7 +56,9 @@
       "required": false
     },
     "emoji": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1
     }
   }
 }

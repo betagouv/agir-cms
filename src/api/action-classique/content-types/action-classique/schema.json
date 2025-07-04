@@ -142,7 +142,10 @@
       "inversedBy": "action_classiques"
     },
     "emoji": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "maxLength": 1,
+      "minLength": 1
     }
   }
 }
