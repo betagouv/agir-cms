@@ -144,7 +144,7 @@
     "emoji": {
       "type": "string",
       "required": false,
-      "maxLength": 1,
+      "maxLength": 2,
       "minLength": 1
     }
   }

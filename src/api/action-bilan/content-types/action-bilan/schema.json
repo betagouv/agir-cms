@@ -58,7 +58,7 @@
     "emoji": {
       "type": "string",
       "minLength": 1,
-      "maxLength": 1
+      "maxLength": 2
     },
     "sous_thematique": {
       "type": "relation",
