@@ -146,6 +146,13 @@
       "required": false,
       "maxLength": 4,
       "minLength": 1
+    },
+    "sous_categorie_recettes": {
+      "type": "enumeration",
+      "enum": [
+        "sans_cuisson",
+        "sans_saumon"
+      ]
     }
   }
 }
