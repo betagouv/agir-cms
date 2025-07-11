@@ -151,7 +151,8 @@
       "type": "enumeration",
       "enum": [
         "sans_cuisson",
-        "sans_saumon"
+        "sans_saumon",
+        "sans_saumon_crevette_cabillaud"
       ]
     }
   }
