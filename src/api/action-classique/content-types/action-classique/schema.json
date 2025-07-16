@@ -157,6 +157,12 @@
     },
     "external_id": {
       "type": "string"
+    },
+    "partenaire": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::partenaire.partenaire",
+      "inversedBy": "action_classiques"
     }
   }
 }

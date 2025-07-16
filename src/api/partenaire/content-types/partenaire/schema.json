@@ -75,6 +75,12 @@
       "minLength": 2,
       "maxLength": 3,
       "regex": "^[0123456789]+$"
+    },
+    "action_classiques": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::action-classique.action-classique",
+      "mappedBy": "partenaire"
     }
   }
 }
