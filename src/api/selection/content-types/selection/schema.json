@@ -21,6 +21,12 @@
     "description": {
       "type": "string",
       "required": true
+    },
+    "action_classiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-classique.action-classique",
+      "mappedBy": "selections"
     }
   }
 }

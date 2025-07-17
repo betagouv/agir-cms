@@ -163,6 +163,12 @@
       "relation": "manyToOne",
       "target": "api::partenaire.partenaire",
       "inversedBy": "action_classiques"
+    },
+    "selections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::selection.selection",
+      "inversedBy": "action_classiques"
     }
   }
 }
