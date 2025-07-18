@@ -65,6 +65,12 @@
       "relation": "manyToOne",
       "target": "api::sous-thematique.sous-thematique",
       "inversedBy": "action_bilans"
+    },
+    "selections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::selection.selection",
+      "inversedBy": "action_bilans"
     }
   }
 }

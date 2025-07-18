@@ -27,6 +27,24 @@
       "relation": "manyToMany",
       "target": "api::action-classique.action-classique",
       "mappedBy": "selections"
+    },
+    "action_quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-quizz.action-quizz",
+      "mappedBy": "selections"
+    },
+    "action_simulateurs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-simulateur.action-simulateur",
+      "mappedBy": "selections"
+    },
+    "action_bilans": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::action-bilan.action-bilan",
+      "mappedBy": "selections"
     }
   }
 }

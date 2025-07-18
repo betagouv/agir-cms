@@ -74,6 +74,12 @@
       "relation": "manyToOne",
       "target": "api::sous-thematique.sous-thematique",
       "inversedBy": "action_simulateurs"
+    },
+    "selections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::selection.selection",
+      "inversedBy": "action_simulateurs"
     }
   }
 }
