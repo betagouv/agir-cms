@@ -4,7 +4,8 @@
   "info": {
     "singularName": "selection",
     "pluralName": "selections",
-    "displayName": "Selection"
+    "displayName": "Selection",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -45,6 +46,17 @@
       "relation": "manyToMany",
       "target": "api::action-bilan.action-bilan",
       "mappedBy": "selections"
+    },
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
