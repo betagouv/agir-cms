@@ -135,12 +135,6 @@
       "default": true,
       "required": false
     },
-    "sous_thematique": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::sous-thematique.sous-thematique",
-      "inversedBy": "action_classiques"
-    },
     "emoji": {
       "type": "string",
       "required": false,

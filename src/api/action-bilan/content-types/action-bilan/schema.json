@@ -60,12 +60,6 @@
       "minLength": 1,
       "maxLength": 6
     },
-    "sous_thematique": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::sous-thematique.sous-thematique",
-      "inversedBy": "action_bilans"
-    },
     "selections": {
       "type": "relation",
       "relation": "manyToMany",
