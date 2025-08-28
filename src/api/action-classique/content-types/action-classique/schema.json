@@ -70,12 +70,7 @@
     "objet_lvo": {
       "type": "enumeration",
       "enum": [
-        "chaussure",
-        "smartphone",
-        "chaise",
-        "portable",
-        "vélo",
-        "voiture"
+        "chaussures"
       ]
     },
     "faqs": {
