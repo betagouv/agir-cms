@@ -134,6 +134,9 @@
       "relation": "manyToMany",
       "target": "api::action-simulateur.action-simulateur",
       "mappedBy": "kycs"
+    },
+    "sous_titre": {
+      "type": "string"
     }
   }
 }
