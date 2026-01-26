@@ -111,6 +111,33 @@
       "type": "boolean",
       "default": true,
       "required": false
+    },
+    "question_accroche": {
+      "type": "richtext"
+    },
+    "introduction": {
+      "type": "richtext"
+    },
+    "explication": {
+      "type": "richtext"
+    },
+    "conditions_eligibilite": {
+      "type": "richtext"
+    },
+    "equipements_eligibles": {
+      "type": "richtext"
+    },
+    "travaux_eligibles": {
+      "type": "richtext"
+    },
+    "montant": {
+      "type": "richtext"
+    },
+    "en_savoir_plus": {
+      "type": "richtext"
+    },
+    "description_courte": {
+      "type": "richtext"
     }
   }
 }
